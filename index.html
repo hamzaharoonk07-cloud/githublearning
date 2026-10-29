@@ -1,11 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nooristan — Creative Studio</title>
+  <meta name="description" content="Nooristan is a creative studio crafting brand identities, digital experiences and visual stories with light, precision and purpose.">
+  <meta name="theme-color" content="#0b0d10">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <h1>Hello To Github</h1>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90">
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <span class="preloader-mark">N</span>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-mark">N</span> Nooristan
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-line"></span>
+        <span class="toggler-line"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">Studio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Clients</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-gold btn-sm" href="#contact">Start a Project</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-grid"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-100 py-5">
+        <div class="col-lg-8">
+          <p class="eyebrow reveal">Creative Studio — Est. 2026</p>
+          <h1 class="hero-title reveal">
+            Where brands<br>
+            find their <em>light.</em>
+          </h1>
+          <p class="hero-lead reveal">
+            Nooristan — <span class="text-gold">“the land of light”</span> — is a design and development studio
+            shaping luminous brand identities and high-performance digital experiences.
+          </p>
+          <div class="d-flex flex-wrap gap-3 reveal">
+            <a href="#work" class="btn btn-gold btn-lg">View Our Work</a>
+            <a href="#contact" class="btn btn-outline-ivory btn-lg">Let’s Talk</a>
+          </div>
+        </div>
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="hero-emblem reveal">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#e8cf96"/>
+                  <stop offset="1" stop-color="#8a6a2f"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="100" r="96" fill="none" stroke="url(#g1)" stroke-width=".6"/>
+              <circle cx="100" cy="100" r="70" fill="none" stroke="url(#g1)" stroke-width=".6" stroke-dasharray="2 6"/>
+              <path d="M100 20 L112 88 L180 100 L112 112 L100 180 L88 112 L20 100 L88 88 Z" fill="url(#g1)" opacity=".9"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll to studio section"><span></span></a>
+  </header>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Brand Identity</span><span>✦</span><span>Web Design</span><span>✦</span><span>Front-End Development</span><span>✦</span>
+      <span>Art Direction</span><span>✦</span><span>Packaging</span><span>✦</span><span>UI Design</span><span>✦</span>
+      <span>Brand Identity</span><span>✦</span><span>Web Design</span><span>✦</span><span>Front-End Development</span><span>✦</span>
+      <span>Art Direction</span><span>✦</span><span>Packaging</span><span>✦</span><span>UI Design</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-lg-5">
+          <div class="about-visual reveal">
+            <div class="about-frame">
+              <span class="about-word">Noor</span>
+            </div>
+            <div class="about-badge">
+              <strong data-count="120">0</strong><span>+ projects<br>delivered</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="eyebrow reveal">The Studio</p>
+          <h2 class="section-title reveal">Design with depth.<br>Code with clarity.</h2>
+          <p class="text-muted-ivory reveal">
+            We believe every brand carries a light of its own. Our work is about revealing it — through
+            considered typography, refined visual systems and interfaces engineered for speed on every screen.
+          </p>
+          <p class="text-muted-ivory reveal">
+            From first sketch to final deploy, design and engineering live under one roof, so nothing is lost
+            in translation between the mood board and the browser.
+          </p>
+          <div class="row g-4 mt-2 stats">
+            <div class="col-4 reveal"><strong data-count="8">0</strong><span>Years of craft</span></div>
+            <div class="col-4 reveal"><strong data-count="65">0</strong><span>Happy clients</span></div>
+            <div class="col-4 reveal"><strong data-count="14">0</strong><span>Countries reached</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-7">
+          <p class="eyebrow reveal">What We Do</p>
+          <h2 class="section-title reveal">Services shaped around your story.</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <article class="service-card reveal">
+            <span class="service-num">01</span>
+            <h3>Brand Identity</h3>
+            <p>Logos, visual systems and guidelines that give your brand a voice the world recognises.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article class="service-card reveal">
+            <span class="service-num">02</span>
+            <h3>Web Design</h3>
+            <p>Elegant, user-centred interfaces with a premium feel and a clear path to conversion.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article class="service-card reveal">
+            <span class="service-num">03</span>
+            <h3>Development</h3>
+            <p>Responsive, accessible, lightning-fast front-end builds with clean, scalable code.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <article class="service-card reveal">
+            <span class="service-num">04</span>
+            <h3>Art Direction</h3>
+            <p>Campaign visuals, social content and print collateral crafted to stay consistent.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Portfolio -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="row align-items-end mb-4 g-3">
+        <div class="col-lg-6">
+          <p class="eyebrow reveal">Selected Work</p>
+          <h2 class="section-title reveal mb-0">Projects in the light.</h2>
+        </div>
+        <div class="col-lg-6">
+          <ul class="work-filter reveal" role="tablist">
+            <li><button class="active" data-filter="all">All</button></li>
+            <li><button data-filter="branding">Branding</button></li>
+            <li><button data-filter="web">Web</button></li>
+            <li><button data-filter="print">Print</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row g-4 work-grid">
+        <div class="col-md-6 col-lg-4 work-item" data-category="branding">
+          <a href="#" class="work-card reveal" data-bs-toggle="modal" data-bs-target="#workModal"
+             data-title="Saffron &amp; Stone" data-cat="Branding" data-art="art-1"
+             data-desc="A full identity for a luxury spice house — gilded monogram, warm earth palette and packaging system.">
+            <div class="work-art art-1"><span>S&amp;S</span></div>
+            <div class="work-meta"><h3>Saffron &amp; Stone</h3><span>Branding</span></div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 work-item" data-category="web">
+          <a href="#" class="work-card reveal" data-bs-toggle="modal" data-bs-target="#workModal"
+             data-title="Aurelia Residences" data-cat="Web Design" data-art="art-2"
+             data-desc="A dark-mode real-estate experience with cinematic scroll, booking flow and sub-second load times.">
+            <div class="work-art art-2"><span>Aurelia</span></div>
+            <div class="work-meta"><h3>Aurelia Residences</h3><span>Web Design</span></div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 work-item" data-category="print">
+          <a href="#" class="work-card reveal" data-bs-toggle="modal" data-bs-target="#workModal"
+             data-title="Kafiristan Journal" data-cat="Print" data-art="art-3"
+             data-desc="Editorial design for a travel quarterly celebrating mountain cultures, cedar forests and craft.">
+            <div class="work-art art-3"><span>Journal</span></div>
+            <div class="work-meta"><h3>Kafiristan Journal</h3><span>Print</span></div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 work-item" data-category="web">
+          <a href="#" class="work-card reveal" data-bs-toggle="modal" data-bs-target="#workModal"
+             data-title="Meridian Capital" data-cat="Web Development" data-art="art-4"
+             data-desc="A corporate site for an investment firm — data-rich, accessible and built on a reusable component system.">
+            <div class="work-art art-4"><span>Meridian</span></div>
+            <div class="work-meta"><h3>Meridian Capital</h3><span>Web Development</span></div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 work-item" data-category="branding">
+          <a href="#" class="work-card reveal" data-bs-toggle="modal" data-bs-target="#workModal"
+             data-title="Cedar Atelier" data-cat="Branding" data-art="art-5"
+             data-desc="Identity and signage for a woodcraft atelier, inspired by hand-carved patterns from the valleys.">
+            <div class="work-art art-5"><span>Cedar</span></div>
+            <div class="work-meta"><h3>Cedar Atelier</h3><span>Branding</span></div>
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-4 work-item" data-category="print">
+          <a href="#" class="work-card reveal" data-bs-toggle="modal" data-bs-target="#workModal"
+             data-title="Lumen Festival" data-cat="Print &amp; Campaign" data-art="art-6"
+             data-desc="Posters, tickets and outdoor campaign for a festival of light and music.">
+            <div class="work-art art-6"><span>Lumen</span></div>
+            <div class="work-meta"><h3>Lumen Festival</h3><span>Print &amp; Campaign</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="section section-alt">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-7">
+          <p class="eyebrow reveal">How We Work</p>
+          <h2 class="section-title reveal">A clear path from idea to launch.</h2>
+        </div>
+      </div>
+      <div class="row g-4 process">
+        <div class="col-sm-6 col-lg-3 reveal"><div class="process-step"><span>I</span><h3>Discover</h3><p>We listen, research and define what makes your brand distinct.</p></div></div>
+        <div class="col-sm-6 col-lg-3 reveal"><div class="process-step"><span>II</span><h3>Design</h3><p>Concepts, systems and interfaces refined until every detail earns its place.</p></div></div>
+        <div class="col-sm-6 col-lg-3 reveal"><div class="process-step"><span>III</span><h3>Develop</h3><p>Pixel-true, responsive builds optimised for performance and SEO.</p></div></div>
+        <div class="col-sm-6 col-lg-3 reveal"><div class="process-step"><span>IV</span><h3>Deliver</h3><p>Launch, hand-off and ongoing support so your light keeps shining.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-9">
+          <p class="eyebrow reveal">Kind Words</p>
+          <div id="quoteCarousel" class="carousel slide reveal" data-bs-ride="carousel" data-bs-interval="6000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <blockquote class="quote">“Nooristan understood our brand better than we did. The new identity feels timeless — and our site finally performs as good as it looks.”</blockquote>
+                <p class="quote-author">Client Name <span>— Founder, Company</span></p>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="quote">“Rare to find designers who also write such clean code. Every screen was polished, every deadline met.”</blockquote>
+                <p class="quote-author">Client Name <span>— Marketing Lead, Company</span></p>
+              </div>
+              <div class="carousel-item">
+                <blockquote class="quote">“From the first call to launch day, the process felt calm, considered and genuinely collaborative.”</blockquote>
+                <p class="quote-author">Client Name <span>— CEO, Company</span></p>
+              </div>
+            </div>
+            <div class="carousel-indicators position-static mt-4">
+              <button type="button" data-bs-target="#quoteCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonial 1"></button>
+              <button type="button" data-bs-target="#quoteCarousel" data-bs-slide-to="1" aria-label="Testimonial 2"></button>
+              <button type="button" data-bs-target="#quoteCarousel" data-bs-slide-to="2" aria-label="Testimonial 3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="section-title reveal">Let’s create something luminous.</h2>
+          <p class="text-muted-ivory reveal">Tell us about your project and we’ll reply within one business day.</p>
+          <ul class="contact-list reveal">
+            <li><span>Email</span><a href="mailto:hello@nooristan.studio">hello@nooristan.studio</a></li>
+            <li><span>Phone</span><a href="tel:+000000000">+00 000 000 000</a></li>
+            <li><span>Studio</span>Your City, Your Country</li>
+          </ul>
+        </div>
+        <div class="col-lg-7">
+          <form id="contactForm" class="contact-form reveal" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Please enter a valid email.</div>
+              </div>
+              <div class="col-12">
+                <label for="service" class="form-label">Interested in</label>
+                <select class="form-select" id="service">
+                  <option>Brand Identity</option>
+                  <option>Web Design &amp; Development</option>
+                  <option>Art Direction</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Project details</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+                <div class="invalid-feedback">Please share a few details.</div>
+              </div>
+              <div class="col-12 d-flex align-items-center gap-3 flex-wrap">
+                <button type="submit" class="btn btn-gold btn-lg">Send Message</button>
+                <span class="form-status" role="status"></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <a class="navbar-brand" href="#home"><span class="brand-mark">N</span> Nooristan</a>
+      <ul class="social">
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="Behance">Behance</a></li>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="#" aria-label="Dribbble">Dribbble</a></li>
+      </ul>
+      <p class="mb-0 small">© <span id="year"></span> Nooristan Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
+
+  <!-- Project modal -->
+  <div class="modal fade" id="workModal" tabindex="-1" aria-labelledby="workModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="work-art modal-art"><span></span></div>
+        <div class="modal-body p-4 p-md-5">
+          <p class="eyebrow mb-2" id="workModalCat"></p>
+          <h3 class="section-title h2" id="workModalTitle"></h3>
+          <p class="text-muted-ivory mb-0" id="workModalDesc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
